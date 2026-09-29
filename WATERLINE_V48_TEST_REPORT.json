@@ -1,0 +1,65 @@
+{
+  "project_root": ".",
+  "server_events": [
+    "choicePick",
+    "choiceTree",
+    "connection",
+    "create",
+    "disconnect",
+    "eventChoice",
+    "extraTalk",
+    "inspect",
+    "join",
+    "lifeAction",
+    "mansionAction",
+    "mansionEvent",
+    "mansionEventChoice",
+    "mansionInspect",
+    "mansionMove",
+    "miniOpen",
+    "miniPlay",
+    "move",
+    "rest",
+    "save",
+    "sceneChoice",
+    "spaceAction",
+    "spaceEnter",
+    "talk",
+    "triggerChoice",
+    "worldAction",
+    "worldConsequence"
+  ],
+  "required_event_missing": [],
+  "client_controls": {
+    "inspect": true,
+    "map": true,
+    "move": true,
+    "mansion_move": true,
+    "mansion_action": true,
+    "mansion_inspect": true,
+    "scene_choice": true,
+    "event_choice": true,
+    "mini_play": true,
+    "tabs": true
+  },
+  "checks": {
+    "server.js": {
+      "ok": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "app.js": {
+      "ok": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "current simulation": {
+      "ok": true,
+      "returncode": 0,
+      "stdout": "=== WATERLINE CURRENT PLAY SIM ===\n01. PASS | 게임 시작 | create\n02. PASS | 현관 물건 조사 | inspect\n03. PASS | 조사 결과 선택 | sceneChoice\n04. PASS | 아이와 대화 | talk\n05. PASS | 다른 방 보기/이동 | mansionMove\n06. PASS | 도시로 이동 | move\n07. PASS | 운하 시장 조사 | inspect\n08. PASS | 발견 결과 선택 | sceneChoice\n09. PASS | 지도에서 다른 장소 이동 | move\n10. PASS | 도시 NPC 대화 | talk\n11. PASS | 추가 대화 | extraTalk\n12. PASS | 미니게임 | miniPlay\n13. PASS | 저택으로 귀환 | move\n14. PASS | 하루 마무리 | rest\nobsolete WHITE_FRAGMENT reference: False\nmissing: []\nRESULT: PASS\n",
+      "stderr": "Spreadsheet runtime warmup failed during python startup\nTraceback (most recent call last):\n  File \"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py\", line 26, in warm_spreadsheet_runtime_on_startup\n  File \"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py\", line 785, in warm_spreadsheet_runtime\n  File \"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py\", line 720, in _warm_feature_flows\n  File \"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py\", line 704, in _warm_collaboration_flows\n  File \"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py\", line 32317, in hydrate_crdt_from_proto\n  File \"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py\", line 749, in __call__\n  File \"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py\", line 150, in call\nartifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.\n"
+    }
+  }
+}

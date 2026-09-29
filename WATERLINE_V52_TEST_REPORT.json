@@ -1,0 +1,28 @@
+{
+  "features": {
+    "day_increment": true,
+    "day_history": true,
+    "world_flags": true,
+    "daily_event_generator": true,
+    "daily_event_choice": true,
+    "local_fallback": true,
+    "sanitizer": true
+  },
+  "checks": {
+    "server.js": {
+      "ok": true,
+      "stdout": "",
+      "stderr": ""
+    },
+    "app.js": {
+      "ok": true,
+      "stdout": "",
+      "stderr": ""
+    },
+    "behavioral simulation": {
+      "ok": false,
+      "stdout": "",
+      "stderr": "rtifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py\", line 26, in warm_spreadsheet_runtime_on_startup\n  File \"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py\", line 785, in warm_spreadsheet_runtime\n  File \"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py\", line 720, in _warm_feature_flows\n  File \"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py\", line 704, in _warm_collaboration_flows\n  File \"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py\", line 32317, in hydrate_crdt_from_proto\n  File \"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py\", line 749, in __call__\n  File \"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py\", line 150, in call\nartifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.\nTraceback (most recent call last):\n  File \u001b[35m\"/mnt/data/WATERLINE_V52_VERIFIED/simulate_waterline_v52.py\"\u001b[0m, line \u001b[35m31\u001b[0m, in \u001b[35m<module>\u001b[0m\n    assert \u001b[1;31mw.day==101\u001b[0m\n           \u001b[1;31m^^^^^^^^^^\u001b[0m\n\u001b[1;35mAssertionError\u001b[0m\n"
+    }
+  }
+}
